@@ -1,0 +1,184 @@
+/*Carolina Gaming Webpage css file*/
+/*styling for the whole page goes here*/
+/*
+COLORS:
+dark blue: #01194E
+light blue: #5391CE
+white: #FFFFFF
+*/
+body {
+  background-color: rgba(83, 145, 206, 0.2);
+}
+
+main {
+  padding-top: 25px;
+  background-color: #dddddd;
+  font-size: 16px;
+  background-color: #eeeeee;
+  color: #01194E;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+/****************ALL HEADER STYLING *******************/
+header {
+  padding: 50px;
+}
+
+.header1 {
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  background-color: #01194E;
+  color: #f8f8f8;
+  float: left;
+  padding: 10px;
+  display: block;
+}
+
+.header2 {
+  float: right;
+  display: block;
+  padding: 5px;
+}
+
+.nav-header {
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 100px;
+}
+
+.header-item {
+  display: inline;
+  padding: 8px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+.link {
+  color: #01194E;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*********************************************************/
+
+/****************ALL FOOTER STYLING **********************/
+footer {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  background-color: #01194E;
+}
+
+.nav-footer {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.footer-item {
+  padding: 8px;
+  margin: 10px;
+  background-color: #ffffff;
+  position: relative;
+  list-style: none
+}
+
+.footers {
+  color: white;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rights {
+  color: white;
+}
+/*****************************************************************/
+
+/****************ALL HOMEPAGE/INDEX.HTML STYLING *****************/
+.home-container {
+  text-align: center;
+  color: white;
+  background-color: #01194E;
+  padding-top: 20px;
+  padding-Bottom: 60px;
+}
+
+.hometitle {
+  background-color: #5391CE;
+  padding: 20px;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+
+.hometitle h1 {
+  font-size: 60pt;
+}
+/*****************************************************************/
+
+/*******************ALL TEAMMATES STYLING ************************/
+.section-container {
+  text-align: center;
+  margin: 50px;
+  background-color: rgba(83, 145, 206, 0.5);
+  padding-top: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.teammate {
+  margin: 10px;
+}
+
+#cod {
+  margin-top: 25px;
+}
+
+.cgteam {
+  background-color: white;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-style: ridge;
+}
+/*****************************************************************/
+
+/****************ALL CONTACT AND ABOUT STYLING *******************/
+.subtitle {
+  background-color: white;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30pt;
+  padding: 20px;
+  border-style: ridge;
+}
+
+.dateItems {
+  list-style: none
+}
+
+.info-container {
+  text-align: center;
+  margin: 50px;
+  background-color: rgba(83, 145, 206, 0.5);
+  padding-top: 20px;
+  padding-bottom: 150px;
+  border: 2px solid #01194E;
+  border-radius: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
