@@ -6,63 +6,100 @@ dark blue: #01194E
 light blue: #5391CE
 white: #FFFFFF
 */
+
+/* removes default margin */
+*{
+  margin:0;
+}
+
 body {
-  background-color: rgba(83, 145, 206, 0.2);
+
+  margin:0px;
+  background-image: url("images/blur.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 main {
-  padding-top: 25px;
-  background-color: #dddddd;
   font-size: 16px;
-  background-color: #eeeeee;
-  color: #01194E;
-  width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
+
+
 }
 
 /****************ALL HEADER STYLING *******************/
-header {
-  padding: 50px;
+.nav-logo{
+  display: flex;
+  align-items: center;
+  color:white;
+  font-size: 40px;
+  font-weight: 400;
+
+  padding-left: 150px;
 }
 
-.header1 {
-  font-style: italic;
-  font-size: 28px;
+
+
+#cgtitle{
+  padding-left: 10px;
+}
+
+.nav-header{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  color:white;
+  padding: 10px;
   text-align: center;
-  background-color: #01194E;
-  color: #f8f8f8;
-  float: left;
+  font-family: "Segoe UI";
+}
+
+.nav-header-links {
+  font-size: 16px;
+  font-weight: 400;
   padding: 10px;
   display: block;
+  padding-right: 150px;
 }
 
 .header2 {
-  float: right;
+
   display: block;
   padding: 5px;
-}
-
-.nav-header {
-  padding-top: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 100px;
 }
 
 .header-item {
   display: inline;
   padding: 8px;
-  margin: 10px;
-  background-color: #ffffff;
+}
+
+.header-item{
+  display: inline;
+  padding: 8px;
+  color:white;
 }
 
 .link {
-  color: #01194E;
   text-decoration: none;
-  font-weight: bold;
+  color:#6c757d;
+  font-family: "Segoe UI";
 }
+.link:hover {
+  color:white;
+}
+
+.link-active {
+  text-decoration: none;
+  color:white;
+  font-family: sans-serif;
+}
+
 /*********************************************************/
 
 /****************ALL FOOTER STYLING **********************/
@@ -70,7 +107,7 @@ footer {
   font-style: italic;
   font-size: 12px;
   text-align: center;
-  background-color: #01194E;
+
 }
 
 .nav-footer {
@@ -108,9 +145,8 @@ footer {
 .home-container {
   text-align: center;
   color: white;
-  background-color: #01194E;
-  padding-top: 20px;
-  padding-Bottom: 60px;
+
+
 }
 
 .hometitle {
@@ -181,4 +217,56 @@ footer {
   border-radius: 30px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  color:#6c757d;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: darkgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbtn:hover {
+color: white;
 }

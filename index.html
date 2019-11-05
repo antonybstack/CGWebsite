@@ -10,38 +10,49 @@
 
 <!-- viewable webpage begins -->
 <body>
-	<header>
-		<!-- Carolina Gaming Logo in top right of webpage -->
-		<img alt="cglogo" src="images/cglogo.png" width="100">
-			<p class=header2>login</p>
-			<p class=header2>sign up</p>
-	</header>
 
 	<!-- Navigational Bar -->
 	<nav class="nav-header">
-		<ul>
-			<li class="header-item"><a class="link" href="index.html">Home</a></li>
-			<li class="header-item"><a class="link" href="about.html">About Us</a></li>
-			<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
-			<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
-			<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
-			<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-		</ul>
+		<div class="nav-logo">
+			<img alt="cglogo" src="images/cglogo.png" width="100">
+			<!-- <p id="cgtitle">Carolina Gaming</p> -->
+		</div>
+		<div class="nav-header-links">
+			<ul>
+				<li class="header-item"><a class="link-active" href="index.html">Home</a></li>
+				<li class="header-item"><a class="link" href="about.html">About Us</a></li>
+				<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
+				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
+				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
+				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
+				<div class="dropdown">
+				  <p class="dropbtn">Account</p>
+					  <div class="dropdown-content">
+							<a class="link" href="login.html">Login</a>
+							<a class="link" href="signup.html">Sign Up</a>
+							<a class="link" href="signup.html">Register</a>
+					  </div>
+				</div>
+
+			</ul>
+		</div>
+		</div>
+
 	</nav>
 
 	<main>
 		<!-- Welcome Page for user to understand what the website might be about -->
 		<div class="home-container">
-			<div class="hometitle">
+			<!-- <div class="hometitle">
 				<h1>Carolina Gaming</h1>
 				<p>
 					Gaming and entertainment. Located in the heart of the Carolinas
 				</p>
-			</div>
+			</div> -->
 
 			<!-- Big Team Photo -->
 			<div id="team">
-				<img alt="cgteam" src="images/cgteam.png" width="1200">
+				<img alt="cgteam" src="images/cgteam.png" width="600">
 			</div>
 			<div class="hometitle">
 			<h1>What We Do</h1>
