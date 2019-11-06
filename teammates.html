@@ -5,183 +5,208 @@
 	<title>Carolina Gaming</title>
 	<meta name="description" content="Carolina Gaming Website">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="script.js"></script>
 </head>
 
 <!-- viewable webpage begins -->
-<body>
-	<header>
-		<!-- Carolina Gaming Logo in top right of webpage -->
-		<img alt="cglogo" src="images/cglogo.png" width="100">
-			<p class=header2>login</p>
-			<p class=header2>sign up</p>
-	</header>
 
+<body>
 	<!-- Navigational Bar -->
 	<nav class="nav-header">
-		<ul>
-			<li class="header-item"><a class="link" href="index.html">Home</a></li>
-			<li class="header-item"><a class="link" href="about.html">About Us</a></li>
-			<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
-			<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
-			<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
-			<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-		</ul>
+		<div class="nav-logo">
+			<img alt="cglogo" src="images/cglogo.png" width="100">
+			<!-- <p id="cgtitle">Carolina Gaming</p> -->
+		</div>
+		<div class="nav-header-links">
+			<ul class="parent">
+				<li class="header-item"><a class="link-active" href="index.html">Home</a></li>
+				<li class="header-item"><a class="link" href="about.html">About Us</a></li>
+				<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
+				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
+				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
+				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
+				<li class="header-item" id="t"><a class="link" href="contact.html">Account</a>
+				<ul>
+					<li class="header-item"><a class="link" href="login.html">Login</a></li>
+					<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
+					<li class="header-item"><a class="link" href="signup.html">Register</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		</div>
+
 	</nav>
 
 	<main>
 		<!-- Call of Duty teammates section -->
-		<div class="section-container">
-			<img alt="cod" id="cod" src="images/cod.png" width="400">
-			<p>
-				Carolina Gaming has invested heavily in the Call of Duty scene since inception in 2018.
-				Sending teams to participate in three events,  winning one,  and also funding teams for
-				online play,  Carolina Gaming has on begun in the Call of Duty scene.
-				Our Call of duty roster is currently composed of the 'CG White' team.
-				CG White are the Carolina Games Summit 2019 Champions and have won two regular season titles.
-			</p>
+		<div id="accordion">
+			<h3>COD</h3>
+			<div>
+				<div class="section-container">
+					<img alt="cod" id="cod" src="images/cod.png" width="400">
+					<p>
+						Carolina Gaming has invested heavily in the Call of Duty scene since inception in 2018.
+						Sending teams to participate in three events, winning one, and also funding teams for
+						online play, Carolina Gaming has on begun in the Call of Duty scene.
+						Our Call of duty roster is currently composed of the 'CG White' team.
+						CG White are the Carolina Games Summit 2019 Champions and have won two regular season titles.
+					</p>
 
-			<!-- First Row -->
-			<h2><span class="cgteam">CG White</span></h2>
-			<div class="team-container">
-				<div class="teammate">Matrixs #10<br />
-					Bryson Bailey<br />
-					<img alt="max_doi" src="images/matrixs.jpg" width="200">
-				</div>
-				<div class="teammate">Chambers #0<br />
-					Bryson Bailey<br />
-					<img alt="max_doi" src="images/chambers.jpg" width="200">
-				</div>
-				<div class="teammate">Stacks #17<br />
-					Bryson Bailey<br />
-					<img alt="max_doi" src="images/stacks.jpg" width="200">
-				</div>
+					<!-- First Row -->
+					<h2><span class="cgteam">CG White</span></h2>
+					<div class="team-container">
+						<div class="teammate">Matrixs #10<br />
+							Bryson Bailey<br />
+							<img alt="max_doi" src="images/matrixs.jpg" width="200">
+						</div>
+						<div class="teammate">Chambers #0<br />
+							Bryson Bailey<br />
+							<img alt="max_doi" src="images/chambers.jpg" width="200">
+						</div>
+						<div class="teammate">Stacks #17<br />
+							Bryson Bailey<br />
+							<img alt="max_doi" src="images/stacks.jpg" width="200">
+						</div>
+					</div>
 
+					<!-- Second Row -->
+					<div class="team-container">
+						<div class="teammate">Merrcyg #34<br />
+							Bryson Bailey<br />
+							<img alt="max_doi" src="images/merrcyg.jpg" width="200">
+						</div>
+						<div class="teammate">Sly #11<br />
+							Bryson Bailey<br />
+							<img alt="max_doi" src="images/sly.jpg" width="200">
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<!-- Second Row -->
-			<div class="team-container">
-				<div class="teammate">Merrcyg #34<br />
-					Bryson Bailey<br />
-					<img alt="max_doi" src="images/merrcyg.jpg" width="200">
+			<!-- Streamers section -->
+			<h3>Streamers</h3>
+			<div>
+				<div class="section-container">
+					<img alt="bluebrigade" src="images/bluebrigade.png" width="200">
+					<p>
+						Blue Brigade — the official streaming community of Carolina Gaming.
+					</p>
+
+					<!-- First Row -->
+					<div class="team-container">
+						<div class="teammate">Whiteshadow #1<br />
+							Zach<br />
+							<img alt="whiteshadow" src="images/whiteshadow.png" width="200">
+						</div>
+						<div class="teammate">Snipersnyder #12<br />
+							Ethan<br />
+							<img alt="snipersnyder" src="images/snipersnyder.png" width="200">
+						</div>
+						<div class="teammate">Jessibabe88 #88<br />
+							Jessica<br />
+							<img alt="jessibabe" src="images/jessibabe.png" width="200">
+						</div>
+						<div class="teammate">Strider #69<br />
+							Eric<br />
+							<img alt="strider" src="images/strider.png" width="200">
+						</div>
+					</div>
+
+					<!-- Second Row -->
+					<div class="team-container">
+						<div class="teammate">Noquarter #24<br />
+							Matt<br />
+							<img alt="noquarter" src="images/noquarter.png" width="200">
+						</div>
+						<div class="teammate">Ayeraie<br />
+							Michelle<br />
+							<img alt="ayeraie" src="images/ayeraie.png" width="200">
+						</div>
+						<div class="teammate">Tornapathy #88<br />
+							Thomas<br />
+							<img alt="tornapathy" src="images/tornapathy.png" width="200">
+						</div>
+						<div class="teammate">Slayerotg<br />
+							Carlos<br />
+							<img alt="slayerotg" src="images/slayerotg.png" width="200">
+						</div>
+					</div>
+
+					<!-- Third Row -->
+					<div class="team-container">
+						<div class="teammate">Tatsuotd<br />
+							Jarred<br />
+							<img alt="tatsuotd" src="images/tatsuotd.png" width="200">
+						</div>
+						<div class="teammate">SmithxNC<br />
+							Smith<br />
+							<img alt="smithxnc" src="images/smithxnc.png" width="200">
+						</div>
+						<div class="teammate">Whytlightnin<br />
+							Wayne<br />
+							<img alt="whytlightnin" src="images/whytlightnin.png" width="200">
+						</div>
+						<div class="teammate">Tempy<br />
+							Kait<br />
+							<img alt="tempy" src="images/tempy.png" width="200">
+						</div>
+					</div>
+
+					<!-- Fourth Row -->
+					<div class="team-container">
+						<div class="teammate">Zelbuh #6<br />
+							Angela<br />
+							<img alt="zelbuh" src="images/zelbuh.png" width="200">
+						</div>
+						<div class="teammate">Explosive #16<br />
+							Brandon<br />
+							<img alt="explosive" src="images/explosive.png" width="200">
+						</div>
+						<div class="teammate">Amay #28<br />
+							Adam<br />
+							<img alt="amay" src="images/amay.png" width="200">
+						</div>
+					</div>
 				</div>
-				<div class="teammate">Sly #11<br />
-					Bryson Bailey<br />
-					<img alt="max_doi" src="images/sly.jpg" width="200">
+			</div>
+
+			<h3>Rocket Leauge</h3>
+			<!-- Rocket League teammates section -->
+			<div>
+				<div class="section-container">
+					<h1><span class="cgteam">Rocket League</span></h1>
+					<div class="team-container">
+						<div class="teammate">Padrino<br />
+							Padrino<br />
+							<img alt="cglogo" src="images/cglogo.png" width="150">
+						</div>
+						<div class="teammate">Quazepect<br />
+							Joshua<br />
+							<img alt="cglogo" src="images/cglogo.png" width="150">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3>Tekken</h3>
+			<!-- Tekken teammates section -->
+			<div>
+				<div class="section-container">
+					<h1><span class="cgteam">Tekken</span></h1>
+					<div class="team-container">
+						<div class="teammate">Aura<br />
+							Reed<br />
+							<img alt="aura" src="images/aura.png" width="150">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Streamers section -->
-		<div class="section-container">
-			<img alt="bluebrigade" src="images/bluebrigade.png" width="200">
-			<p>
-				Blue Brigade — the official streaming community of Carolina Gaming.
-			</p>
-
-			<!-- First Row -->
-			<div class="team-container">
-				<div class="teammate">Whiteshadow #1<br />
-					Zach<br />
-					<img alt="whiteshadow" src="images/whiteshadow.png" width="200">
-				</div>
-				<div class="teammate">Snipersnyder #12<br />
-					Ethan<br />
-					<img alt="snipersnyder" src="images/snipersnyder.png" width="200">
-				</div>
-				<div class="teammate">Jessibabe88 #88<br />
-					Jessica<br />
-					<img alt="jessibabe" src="images/jessibabe.png" width="200">
-				</div>
-				<div class="teammate">Strider #69<br />
-					Eric<br />
-					<img alt="strider" src="images/strider.png" width="200">
-				</div>
-			</div>
-
-			<!-- Second Row -->
-			<div class="team-container">
-				<div class="teammate">Noquarter #24<br />
-					Matt<br />
-					<img alt="noquarter" src="images/noquarter.png" width="200">
-				</div>
-				<div class="teammate">Ayeraie<br />
-					Michelle<br />
-					<img alt="ayeraie" src="images/ayeraie.png" width="200">
-				</div>
-				<div class="teammate">Tornapathy #88<br />
-					Thomas<br />
-					<img alt="tornapathy" src="images/tornapathy.png" width="200">
-				</div>
-				<div class="teammate">Slayerotg<br />
-					Carlos<br />
-					<img alt="slayerotg" src="images/slayerotg.png" width="200">
-				</div>
-			</div>
-
-			<!-- Third Row -->
-			<div class="team-container">
-				<div class="teammate">Tatsuotd<br />
-					Jarred<br />
-					<img alt="tatsuotd" src="images/tatsuotd.png" width="200">
-				</div>
-				<div class="teammate">SmithxNC<br />
-					Smith<br />
-					<img alt="smithxnc" src="images/smithxnc.png" width="200">
-				</div>
-				<div class="teammate">Whytlightnin<br />
-					Wayne<br />
-					<img alt="whytlightnin" src="images/whytlightnin.png" width="200">
-				</div>
-				<div class="teammate">Tempy<br />
-					Kait<br />
-					<img alt="tempy" src="images/tempy.png" width="200">
-				</div>
-			</div>
-
-			<!-- Fourth Row -->
-			<div class="team-container">
-				<div class="teammate">Zelbuh #6<br />
-					Angela<br />
-					<img alt="zelbuh" src="images/zelbuh.png" width="200">
-				</div>
-				<div class="teammate">Explosive #16<br />
-					Brandon<br />
-					<img alt="explosive" src="images/explosive.png" width="200">
-				</div>
-				<div class="teammate">Amay #28<br />
-					Adam<br />
-					<img alt="amay" src="images/amay.png" width="200">
-				</div>
-			</div>
-		</div>
-
-		<!-- Rocket League teammates section -->
-		<div class="section-container">
-			<h1><span class="cgteam">Rocket League</span></h1>
-			<div class="team-container">
-				<div class="teammate">Padrino<br />
-					Padrino<br />
-					<img alt="cglogo" src="images/cglogo.png" width="150">
-				</div>
-				<div class="teammate">Quazepect<br />
-					Joshua<br />
-					<img alt="cglogo" src="images/cglogo.png" width="150">
-				</div>
-			</div>
-		</div>
-
-		<!-- Tekken teammates section -->
-		<div class="section-container">
-			<h1><span class="cgteam">Tekken</span></h1>
-			<div class="team-container">
-				<div class="teammate">Aura<br />
-					Reed<br />
-					<img alt="aura" src="images/aura.png" width="150">
-				</div>
-			</div>
-		</div>
-
 	</main>
 
 	<footer>
