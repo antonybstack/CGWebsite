@@ -6,6 +6,9 @@
 	<meta name="description" content="Carolina Gaming Website">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 	<!-- jquery dependency -->
+	<script src="script.js"></script>
 </head>
 
 <!-- viewable webpage begins -->
@@ -18,21 +21,28 @@
 			<!-- <p id="cgtitle">Carolina Gaming</p> -->
 		</div>
 		<div class="nav-header-links">
-			<ul>
+			<ul class="parent">
 				<li class="header-item"><a class="link-active" href="index.html">Home</a></li>
 				<li class="header-item"><a class="link" href="about.html">About Us</a></li>
 				<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
 				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
 				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
 				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-				<div class="dropdown">
+				<li class="header-item" id="t"><a class="link" href="contact.html">Account</a>
+				<ul>
+					<li class="header-item"><a class="link" href="login.html">Login</a></li>
+					<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
+					<li class="header-item"><a class="link" href="signup.html">Register</a></li>
+				</ul>
+				</li>
+				<!-- <div class="dropdown">
 				  <p class="dropbtn">Account</p>
 					  <div class="dropdown-content">
 							<a class="link" href="login.html">Login</a>
 							<a class="link" href="signup.html">Sign Up</a>
 							<a class="link" href="signup.html">Register</a>
 					  </div>
-				</div>
+				</div> -->
 
 			</ul>
 		</div>
