@@ -7,14 +7,22 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 	<!-- jquery dependency -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jquery dependency -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
 	<script src="script.js"></script>
+
+	<!-- slick dependencies -->
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <!-- viewable webpage begins -->
+
 <body>
 
 	<!-- Navigational Bar -->
@@ -31,42 +39,32 @@
 				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
 				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
 				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-				<li class="header-item" id="t"><a class="link" href="contact.html">Account</a>
-				<ul>
-					<li class="header-item"><a class="link" href="login.html">Login</a></li>
-					<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
-					<li class="header-item"><a class="link" href="signup.html">Register</a></li>
-				</ul>
+				<!-- Drop down menu for account -->
+				<li class="header-item" id="t"><a class="link" href="">Account</a>
+					<ul>
+						<li class="header-item"><a class="link" href="login.html">Login</a></li>
+						<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
+						<li class="header-item"><a class="link" href="signup.html">Register</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
 		</div>
-
 	</nav>
 
 	<main>
-		<!-- Welcome Page for user to understand what the website might be about -->
 		<div class="home-container">
-			<!-- <div class="hometitle">
-				<h1>Carolina Gaming</h1>
-				<p>
-					Gaming and entertainment. Located in the heart of the Carolinas
-				</p>
-			</div> -->
-
-			<!-- Big Team Photo -->
-			<div id="team">
-				<img alt="cgteam" src="images/cgteam.png" width="600">
+			<!-- jQuery Plugin slick (a jQuery Carousal) -->
+			<div id="slide" class="slideshow">
+				<div><img alt="cgteam" src="images/cgteam.png" width="600"></div>
+				<div><img alt="mw" src="images/mw.png" width="800"></div>
+				<div><img alt="halo3" src="images/halo3.png" width="800"></div>
+				<div><img alt="bluebrigade" src="images/bluebrigade.png" width="800"></div>
+				<div><img alt="rocketleague" src="images/rocketleague.png" width="800"></div>
 			</div>
-			<div class="hometitle">
-			<h1>What We Do</h1>
-			</div>
-			<!-- Images that describe what Carolina Gaming partipates in -->
-			<img alt="mw" src="images/mw.png" width="800">
-			<img alt="halo3" src="images/halo3.png" width="800">
-			<img alt="bluebrigade" src="images/bluebrigade.png" width="800">
-			<img alt="rocketleague" src="images/rocketleague.png" width="800">
 		</div>
+		<!-- Welcome Page for user to understand what the website might be about -->
+
 	</main>
 
 

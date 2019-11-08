@@ -6,15 +6,13 @@ dark blue: #01194E
 light blue: #5391CE
 white: #FFFFFF
 */
-
 /* removes default margin */
-*{
-  margin:0;
+* {
+  margin: 0;
 }
 
 body {
-
-  margin:0px;
+  margin: 0px;
   background-image: url("images/blur.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -22,39 +20,44 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  position: relative;
 }
 
 main {
   font-size: 16px;
-
-
+  height: auto;
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px;
+  /* height of your footer */
 }
 
 /****************ALL HEADER STYLING *******************/
-.nav-logo{
+.nav-logo {
   display: flex;
   align-items: center;
-  color:white;
+  color: white;
   font-size: 40px;
   font-weight: 400;
-
   padding-left: 150px;
 }
 
-
-
-#cgtitle{
+#cgtitle {
   padding-left: 10px;
 }
 
-.nav-header{
+.nav-header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #343a40;
-  color:white;
+  color: white;
   padding: 10px;
   text-align: center;
   font-family: "Segoe UI";
@@ -69,72 +72,48 @@ main {
 }
 
 .header2 {
-
   display: block;
   padding: 5px;
 }
 
-
-
-.header-item{
+.header-item {
   display: inline;
   padding: 8px;
-  color:white;
+  color: white;
 }
 
-.header-item-a{
+.header-item-a {
   display: inline;
   padding: 8px;
-  color:white;
+  color: white;
 }
 
 .link {
   text-decoration: none;
-  color:#6c757d;
+  color: #6c757d;
   font-family: "Segoe UI";
 }
+
 .link:hover {
-  color:white;
+  color: white;
 }
 
 .link-active {
   text-decoration: none;
-  color:white;
+  color: white;
   font-family: sans-serif;
 }
 
-#t ul>li{
-  display:none;
-  text-decoration: none;
-}
-
-
-#t ul{
-  position: absolute;
-  display: inline-block;
-  right: 70px;
-  top: 75px;
-  text-decoration: none;
-}
-
-#t ul>li{
-  position: relative;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-decoration: none;
-}
-
-
 /*********************************************************/
-
 /****************ALL FOOTER STYLING **********************/
 footer {
   font-style: italic;
   font-size: 12px;
   text-align: center;
-
+  background-color: #343a40;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav-footer {
@@ -166,14 +145,15 @@ footer {
 .rights {
   color: white;
 }
-/*****************************************************************/
 
+/*****************************************************************/
 /****************ALL HOMEPAGE/INDEX.HTML STYLING *****************/
 .home-container {
   text-align: center;
   color: white;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hometitle {
@@ -186,8 +166,13 @@ footer {
 .hometitle h1 {
   font-size: 60pt;
 }
-/*****************************************************************/
 
+.slideshow {
+  text-align: center;
+  width: 800px;
+}
+
+/*****************************************************************/
 /*******************ALL TEAMMATES STYLING ************************/
 .section-container {
   text-align: center;
@@ -218,8 +203,8 @@ footer {
   padding-right: 30px;
   border-style: ridge;
 }
-/*****************************************************************/
 
+/*****************************************************************/
 /****************ALL CONTACT AND ABOUT STYLING *******************/
 .subtitle {
   background-color: white;
@@ -246,14 +231,13 @@ footer {
   padding-right: 100px;
 }
 
-
 /* Style The Dropdown Button */
 .dropbtn {
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
   cursor: pointer;
-  color:#6c757d;
+  color: #6c757d;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -262,16 +246,14 @@ footer {
   display: inline-block;
 }
 
-
-
+/****************ALL DROP DOWN STYLING *******************/
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
 }
 
 /* Links inside the dropdown */
@@ -291,10 +273,31 @@ footer {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropbtn:hover {
-color: white;
-} */
+  color: white;
+}
+
+#t ul>li {
+  display: none;
+  text-decoration: none;
+}
+
+#t ul {
+  position: absolute;
+  display: inline-block;
+  right: 70px;
+  top: 75px;
+  text-decoration: none;
+}
+
+#t ul>li {
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-decoration: none;
+}
