@@ -1,4 +1,4 @@
-// using 2 jquery Widget factory effects
+// using 2 jquery Widget effects
 $(document).ready(function() {
   $("#t").hover(
     function() {
@@ -26,7 +26,6 @@ $(document).ready(function() {
 
   // jQuery UI Widget
   if ($("#accordion").length) {
-    console.log("bye");
     $('#accordion').accordion({
       active: false,
       collapsible: true
