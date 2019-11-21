@@ -5,15 +5,15 @@
 	},
 	{
 		"description": "cod",
-		"image": "images/cod.jpg"
+		"image": "images/loading1.gif"
 	},
 	{
 		"description": "mw",
-		"image": "images/mw.jpg"
+		"image": "images/loading2.gif"
 	},
 	{
 		"description": "blur",
-		"image": "images/blur.jpg"
+		"image": "images/loading3.gif"
 	},
 	{
 		"description": "blacktech",

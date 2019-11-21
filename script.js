@@ -79,7 +79,8 @@ $(document).ready(function() {
     }
 
     var html = ""; //create variable to hold all html that is created in the ajax function
-    //ajax for call of duty api
+    // ajax request #1
+    // ajax for call of duty api
     $.ajax({
       type: 'POST',
       url: url,
@@ -105,7 +106,21 @@ $(document).ready(function() {
   });
 
         
-
+      // ajax request #2
+  $.ajax({
+      url: 'images.json',
+      dataType: 'json',
+      success: function(data) {
+      console.log(data.images[0].image);
+      html = "<img src=" + data.images[2].image +" alt=" + data.images[2].image + " height=100px>";
+      $("#data").html(html);
+      },
+      statusCode: {
+        404: function() {
+          alert('There was a problem with the server. Try again soon!');
+        }
+      }
+    });
 
 
 
