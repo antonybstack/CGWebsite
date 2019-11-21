@@ -32,40 +32,57 @@ $(document).ready(function() {
     });
   }
 
+  //whenever radio button is clicked, the necessary input elements are populated to the form based on the platform selected
+  $("input[id='xbox']").change(function() {
+    var htmlXbox = "";
+    htmlXbox += "gamertag: <input id='gamertag' type='text' name='gamertag' value='m45pro'><br>";
+    htmlXbox += "<input id='sub' type='submit' value='Submit'><br>";
+    $("#inputArea").html(htmlXbox);
+  });
 
-    console.log(document.getElementById("pc").checked);
-    console.log($("xbox").prop("checked", true));
-    console.log($("psn").prop("checked", true));
+  $("input[id='psn']").change(function() {
+    var htmlXbox = "";
+    htmlXbox += "gamertag: <input id='gamertag' type='text' name='gamertag' value='reidboyy'><br>";
+    htmlXbox += "<input id='sub' type='submit' value='Submit'><br>";
+    $("#inputArea").html(htmlXbox);
+  });
 
+  $("input[id='pc']").change(function() {
+    var htmlXbox = "";
+    htmlXbox += "gamertag: <input id='gamertag' type='text' name='gamertag' value='Gorapter5'>";
+    htmlXbox += "#<input id='blizzardtag' type='text' name='blizzardtag' value='1216'><br>";
+    htmlXbox += "<input id='sub' type='submit' value='Submit'><br>";
+    $("#inputArea").html(htmlXbox);
+  });
 
-
-  function splitValue(value, index) {
-    return value.substring(0, index) + "," + value.substring(index);
-}
-
-console.log(splitValue("3123124", 2));
-
-  $('#target').submit(function(event){
+  //takes input from user and populates gamertag
+  $('#target').submit(function(event) {
     event.preventDefault();
-    var gamertag = $('#texty').val();
-
-    $("#data").html(html);
-      var html = "";
-      if(document.getElementById("xbox").checked){
-      // xbox
-      var url = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/xbl/gamer/m45pro/profile/type/mp';
+    if (document.getElementById("pc").checked) {
+      var gamertag = $('#gamertag').val();
+      var blizzardtag = $('#blizzardtag').val();
+      gamertag = gamertag + "%23" + blizzardtag; //combines gamertag and blizzardtag, %23 is added between for the api call
+    } else {
+      var gamertag = $('#gamertag').val();
     }
-      if(document.getElementById("pc").checked){
-      // pc
-      var url2 = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/battle/gamer/Gorapter5%231216/profile/type/mp';}
-      if(document.getElementById("psn").checked){
-      // pc
-      var url3 = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/psn/gamer/reidboyy/profile/type/mp';}
 
+    //determines the specific api to use based on the platform radio buttons
+    if (document.getElementById("xbox").checked) {
+      // xbox
+      var url = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/xbl/gamer/' + gamertag + '/profile/type/mp';
+    } else if (document.getElementById("pc").checked) {
+      // pc
+      var url = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/battle/gamer/' + gamertag + '/profile/type/mp';
+    } else if (document.getElementById("psn").checked) {
+      // pc
+      var url = 'https://my.callofduty.com/api/papi-client/stats/cod/v1/title/mw/platform/psn/gamer/' + gamertag + '/profile/type/mp';
+    }
+
+    var html = ""; //create variable to hold all html that is created in the ajax function
     //ajax for call of duty api
     $.ajax({
       type: 'POST',
-      url: url2,
+      url: url,
       beforeSend: function() {
         $("#data").html("Loading...");
       },
@@ -75,35 +92,21 @@ console.log(splitValue("3123124", 2));
       },
       dataType: "json",
       success: function(data) {
-        console.log(data.data.lifetime);
-        html += "<h3>Username: " + data.data.username + "</h3>";
-        html += "<h3>Level: " + data.data.level + "</h3>";
-        html += "<h3>kdRatio: " + data.data.lifetime.all.properties.kdRatio + "</h3>";
-        html += "<h3>Score Per Game: " + data.data.lifetime.all.properties.scorePerGame + " points</h3>";
-        html += "<h3>Win Rate: " + (data.data.lifetime.all.properties.wins / (data.data.lifetime.all.properties.wins + data.data.lifetime.all.properties.losses)) + "%</h3>";
-        html += "<h3>headshot rate: " + (data.data.lifetime.all.properties.headshots / data.data.lifetime.all.properties.kills) + "%</h3>";
-        html += "<h3>bestKillStreak: " + data.data.lifetime.all.properties.bestKillStreak + "</h3>";
-
-
-
+        html += "<p class='datap'>Username:&nbsp</p><p class='dataItem'>" + data.data.username + "</p><br>";
+        html += "<p class='datap'>Level:&nbsp</p><p class='dataItem'>" + data.data.level + "</p><br>";
+        html += "<p class='datap'>kdRatio:&nbsp</p><p class='dataItem'>" + data.data.lifetime.all.properties.kdRatio.toFixed(2) + "</p><br>";
+        html += "<p class='datap'>Score Per Game:&nbsp</p><p class='dataItem'>" + data.data.lifetime.all.properties.scorePerGame.toFixed(2) + " points</p><br>";
+        html += "<p class='datap'>Win Rate:&nbsp</p><p class='dataItem'>" + ((data.data.lifetime.all.properties.wins / (data.data.lifetime.all.properties.wins + data.data.lifetime.all.properties.losses)).toFixed(2)) + "%</p><br>";
+        html += "<p class='datap'>headshot rate:&nbsp</p><p class='dataItem'>" + (data.data.lifetime.all.properties.headshots / data.data.lifetime.all.properties.kills).toFixed(2) + "%</p><br>";
+        html += "<p class='datap'>bestKillStreak:&nbsp</p><p class='dataItem'>" + data.data.lifetime.all.properties.bestKillStreak + "</p>";
         $("#data").html(html);
       }
     });
   });
 
+        
 
 
-  // $.ajax({
-  //     url: url,
-  //     headers: {
-  //         'Authorization':'ggokdwypstlv14p0lfgqvujzinqndy',
-  //     },
-  //     method: 'POST',
-  //     dataType: 'json',
-  //     data: YourData,
-  //     success: function(data){
-  //       console.log('succes: '+data);
-  //     }
-  //   });
 
-});
+
+}); //end ready
