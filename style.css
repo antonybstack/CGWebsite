@@ -26,7 +26,6 @@ body {
 
 main {
   font-size: 16px;
-
   /* helps with drop down menu styling*/
   height: auto;
   min-height: 100vh;
@@ -53,8 +52,6 @@ main {
 #cgtitle {
   padding-left: 10px;
 }
-
-
 
 .nav-header {
   position: relative;
@@ -360,7 +357,7 @@ footer {
 .dateItems {
   list-style: none
 }
-  
+
   .about-container {
   text-align: center;
   margin: 50px;
@@ -371,9 +368,9 @@ footer {
   padding-right: 100px;
   display: flex;
   justify-content: center;
-  
+
 }
-  
+
 .info-container {
   text-align: justify;
   width:600px;
