@@ -13,14 +13,13 @@ $(document).ready(function() {
   // jQuery plugin
   if ($(".slideshow").length) {
     $('.slideshow').slick({
-      dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
       adaptiveHeight: true,
       autoplay: true,
-      autoplaySpeed: 1500
+      autoplaySpeed: 2500
     });
   }
 

@@ -149,13 +149,131 @@ footer {
 
 /*****************************************************************/
 /****************ALL HOMEPAGE/INDEX.HTML STYLING *****************/
-.home-container {
+.home-container1 {
   text-align: center;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #62676C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid;
+  border-bottom-color: #343a40;
 }
+.home-container2{
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.home-container3{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 500px;
+}
+
+#wwd{
+  font-size: 4rem;
+  max-width: 450px;
+
+  line-height: 1;
+  text-shadow: 1px 1px 0 rgb(69, 95, 152), 4px 4px 0 rgba(1, 25, 78, 0.40);
+  color: white;
+  font-weight: 700;
+  font-family: calibri,sans-serif;
+}
+
+.topic{
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-color: #343a40;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-family: calibri,sans-serif;
+  font-size: 1.25rem;
+  
+}
+
+#streamLink{
+  color: black;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/bluebrigade_white.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#contentLink1{
+  color: black;
+  width: 300px;
+  height: 140px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/cgyt.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#contentLink2{
+  color: black;
+  width: 300px;
+  height: 160px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/breaking.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#communityLink1{
+  color: black;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/disc.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#communityLink2{
+  color: black;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/twit.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#communityLink3{
+  color: black;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  background-image: url("images/insta.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .hometitle {
   background-color: #5391CE;
