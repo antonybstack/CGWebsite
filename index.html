@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="tilt.jquery.js"></script>
 
 </head>
 
@@ -27,10 +28,12 @@
 
 	<!-- Navigational Bar -->
 	<nav class="nav-header">
-		<div class="nav-logo">
-			<img alt="cglogo" src="images/cglogo.png" width="100">
+
+		<div class="nav-logo" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt-max="10">
+			<a class="link" href="index.html"><img id="cdlogo" alt="cglogo" src="images/cglogo.png" width="100"></a>
 			<!-- <p id="cgtitle">Carolina Gaming</p> -->
 		</div>
+
 		<div class="nav-header-links">
 			<ul class="parent">
 				<li class="header-item"><a class="link-active" href="index.html">Home</a></li>
@@ -71,17 +74,17 @@
 		</div>
 		
 		<div class="home-container3">
-			<div class="topic">
-				<div class="titleblock">Stream</div>
+			<div class="topic" data-tilt data-tilt-reverse="true" data-tilt-scale="1.03" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-perspective="1000" data-tilt-max="5">
+				<div>Stream</div>
 				<a class="link" href="https://www.twitch.tv/team/ember"><div id="streamLink"></div></a>
 			</div>
-			<div class="topic">
-				<div class="titleblock">Content Create</div>
+			<div class="topic" data-tilt data-tilt-reverse="true" data-tilt-scale="1.03" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-perspective="1000" data-tilt-max="5">
+				<div>Content Create</div>
 				<a class="link" href="https://www.youtube.com/watch?v=dSexTqtNvoM"><div id="contentLink1"></div></a>
 				<a class="link" href="https://www.youtube.com/watch?v=Mo_SRFkOVok"><div id="contentLink2"></div></a>
 			</div>
-			<div class="topic">
-				<div class="titleblock">Share</div>
+			<div class="topic" data-tilt data-tilt-reverse="true" data-tilt-scale="1.03" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-perspective="1000" data-tilt-max="5">
+				<div>Share</div>
 				<a class="link" href="https://discordapp.com/invite/BJ8T24M"><div id="communityLink1"></div></a>
 				<a class="link" href="https://twitter.com/thecarolinagg?lang=en"><div id="communityLink2"></div></a>
 				<a class="link" href="https://www.instagram.com/thecarolinagg/"><div id="communityLink3"></div></a>
@@ -149,5 +152,7 @@
 	</footer>
 
 </body>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
 
 </html>

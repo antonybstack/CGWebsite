@@ -44,12 +44,17 @@ main {
   color: white;
   font-size: 40px;
   font-weight: 400;
-  padding-left: 150px;
+  margin-left: 150px;
+  
+  background-color: #01194E;
+  padding: 10px 10px 10px 10px;
 }
 
 #cgtitle {
   padding-left: 10px;
 }
+
+
 
 .nav-header {
   position: relative;
@@ -199,7 +204,6 @@ display: flex;
   line-height: 30px;
   font-family: calibri,sans-serif;
   font-size: 1.25rem;
-  
 }
 
 #streamLink{
@@ -447,6 +451,16 @@ display: flex;
 
 
 /****************ALL COD MW STATS STYLING *******************/
+.home-container {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #codstats{
   min-width: 500px;
   min-height: 350px;
