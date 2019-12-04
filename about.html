@@ -18,69 +18,73 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <!-- viewable webpage begins -->
 
 <body>
-
-
-	<!-- Navigational Bar -->
+<!-- Navigational Bar -->
 	<nav class="nav-header">
-		<div class="nav-logo">
-			<img alt="cglogo" src="images/cglogo.png" width="100">
+		<!-- uses tilt.js plugin-->
+		<div class="nav-logo" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.05" data-tilt-max="7">
+			<a class="link" href="index.html"><img id="cdlogo" alt="cglogo" src="images/cglogo.png" width="100"></a>
 			<!-- <p id="cgtitle">Carolina Gaming</p> -->
 		</div>
+
 		<div class="nav-header-links">
 			<ul class="parent">
 				<li class="header-item"><a class="link" href="index.html">Home</a></li>
 				<li class="header-item"><a class="link-active" href="about.html">About Us</a></li>
 				<li class="header-item"><a class="link" href="stattracker.html">Cod MW Stats</a></li>
-				<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
-				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
 				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
 				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-				<li class="header-item" id="t"><a class="link" href="contact.html">Account</a>
-					<ul>
-						<li class="header-item"><a class="link" href="login.html">Login</a></li>
-						<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
-						<li class="header-item"><a class="link" href="signup.html">Register</a></li>
-					</ul>
-				</li>
+				<!-- Drop down menu for account -->
+				<!--<li class="header-item" id="t"><a class="link" href="">Account</a>-->
+				<!--	<ul>-->
+				<!--		<li class="header-item"><a class="link" href="login.html">Login</a></li>-->
+				<!--		<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>-->
+				<!--		<li class="header-item"><a class="link" href="signup.html">Register</a></li>-->
+				<!--	</ul>-->
+				<!--</li>-->
 			</ul>
 		</div>
 		</div>
 	</nav>
 
 	<main>
-		<div class="info-container">
-			<label>
-				<h1 class="subtitle">CAROLINA GAMING</h1>
-			</label>
-			<div class="about">
-				Carolina Gaming is a new era esports and online entertainment brand representing the carolinas.
-				Build on the shoulders of persistency, Carolina Gaming has established itself as the preeminent
-				brand respresenting both North Carolina, and South Carolina, in the esports industry. Carolina
-				Gaming, founded in 2018 by Bryson "Vividhits" Goins, has taken part in numberous events and
-				tournments, invested heavily into the careers of players and creators who dawn the carolina logo,
-				and given back to the many community members and fans. Moving forward, our goals are to bring
-				Carolinas a major esports franchise, build a headquarters in Charlotte, North Carolina, win
-				championships, and tell the best stories in online entertainm,ent. We want to continue building
-				a reputatble brand in the Carolinas and finally give it the recognition in esports that it deserves.
+		<div class="about-container">
+			<div class="info-container">
+				<label>
+					<h1 class="subtitle">CAROLINA GAMING</h1>
+				</label>
+				<div class="about">
+					Carolina Gaming is a new era esports and online entertainment brand representing the carolinas.
+					Build on the shoulders of persistency, Carolina Gaming has established itself as the preeminent
+					brand respresenting both North Carolina, and South Carolina, in the esports industry. Carolina
+					Gaming, founded in 2018 by Bryson "Vividhits" Goins, has taken part in numberous events and
+					tournments, invested heavily into the careers of players and creators who dawn the carolina logo,
+					and given back to the many community members and fans. Moving forward, our goals are to bring
+					Carolinas a major esports franchise, build a headquarters in Charlotte, North Carolina, win
+					championships, and tell the best stories in online entertainm,ent. We want to continue building
+					a reputatble brand in the Carolinas and finally give it the recognition in esports that it deserves.
+				</div>
+				<label>
+					<h1 class="subtitle">Carolina Gaming League</h1>
+				</label>
+				<div class="about">
+					Carolina Gaming League is the home of all esports events held by Carolina Gaming.
+					Beginning operations in 2019, the Carolina Gaming League has featured events in Halo and
+					Call of Duty. Hosting world-class players such as Shotzzy in our events, the Carolina Gaming
+					League has built a lasting reputation through consistent event hosting, quality event structure,
+					and the best customer service.
+	
+				</div>
 			</div>
-			<label>
-				<h1 class="subtitle">Carolina Gaming League</h1>
-			</label>
-			<div class="about">
-				Carolina Gaming League is the home of all esports events held by Carolina Gaming.
-				Beginning operations in 2019, the Carolina Gaming League has featured events in Halo and
-				Call of Duty. Hosting world-class players such as Shotzzy in our events, the Carolina Gaming
-				League has built a lasting reputation through consistent event hosting, quality event structure,
-				and the best customer service.
-
+			<div class="employees">
+				<div id="emp1"></div>
+				<div id="emp2"></div>
 			</div>
-
-
 		</div>
 	</main>
 
@@ -139,5 +143,8 @@
 	</footer>
 
 </body>
-
+	
+	<!--tilt.js plugin-->
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
+	
 </html>

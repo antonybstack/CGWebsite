@@ -24,6 +24,7 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="script.js"></script>
+	
 </head>
 
 <!-- viewable webpage begins -->
@@ -31,32 +32,31 @@
 <body>
 	<!-- Navigational Bar -->
 	<nav class="nav-header">
-		<div class="nav-logo">
-			<img alt="cglogo" src="images/cglogo.png" width="100">
+		<!-- uses tilt.js plugin-->
+		<div class="nav-logo" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.05" data-tilt-max="7">
+			<a class="link" href="index.html"><img id="cdlogo" alt="cglogo" src="images/cglogo.png" width="100"></a>
 			<!-- <p id="cgtitle">Carolina Gaming</p> -->
 		</div>
+
 		<div class="nav-header-links">
 			<ul class="parent">
 				<li class="header-item"><a class="link" href="index.html">Home</a></li>
 				<li class="header-item"><a class="link" href="about.html">About Us</a></li>
 				<li class="header-item"><a class="link" href="stattracker.html">Cod MW Stats</a></li>
-				<li class="header-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
-				<li class="header-item"><a class="link" href="matches.html">Match History</a></li>
 				<li class="header-item"><a class="link-active" href="teammates.html">Teammates</a></li>
 				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-				<li class="header-item" id="t"><a class="link" href="contact.html">Account</a>
-					<ul>
-						<li class="header-item"><a class="link" href="login.html">Login</a></li>
-						<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>
-						<li class="header-item"><a class="link" href="signup.html">Register</a></li>
-					</ul>
-				</li>
+				<!-- Drop down menu for account -->
+				<!--<li class="header-item" id="t"><a class="link" href="">Account</a>-->
+				<!--	<ul>-->
+				<!--		<li class="header-item"><a class="link" href="login.html">Login</a></li>-->
+				<!--		<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>-->
+				<!--		<li class="header-item"><a class="link" href="signup.html">Register</a></li>-->
+				<!--	</ul>-->
+				<!--</li>-->
 			</ul>
 		</div>
 		</div>
-
 	</nav>
-
 	<main>
 
 		<div id="accordion-container">
@@ -282,5 +282,8 @@
 	</footer>
 
 </body>
+
+	<!--tilt.js plugin-->
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
 
 </html>
