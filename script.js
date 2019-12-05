@@ -10,7 +10,7 @@ $(document).ready(function() {
   );
 
 
-  // jQuery plugin
+  // jQuery Carousal 'Slick' plugin for home page
   if ($(".slideshow").length) {
     $('.slideshow').slick({
       infinite: true,
@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
   }
 
-  // jQuery UI Widget
+  // jQuery UI Widget for teammates page
   if ($("#accordion").length) {
     $('#accordion').accordion({
       active: false,
@@ -78,8 +78,8 @@ $(document).ready(function() {
     }
 
     var html = ""; //create variable to hold all html that is created in the ajax function
-    // ajax request #1
-    // ajax for call of duty api
+
+    // ajax request #1 call of duty api
     $.ajax({
       type: 'POST',
       url: url,
@@ -104,22 +104,22 @@ $(document).ready(function() {
     });
   });
 
-        
-      // ajax request #2
+
+  // ajax request #2 file retrieval
   $.ajax({
-      url: 'images.json',
-      dataType: 'json',
-      success: function(data) {
+    url: 'images.json',
+    dataType: 'json',
+    success: function(data) {
       console.log(data.images[0].image);
-      html = "<img src=" + data.images[2].image +" alt=" + data.images[2].image + " height=100px>";
+      html = "<img src=" + data.images[2].image + " alt=" + data.images[2].image + " height=100px>";
       $("#data").html(html);
-      },
-      statusCode: {
-        404: function() {
-          alert('There was a problem with the server. Try again soon!');
-        }
+    },
+    statusCode: {
+      404: function() {
+        alert('There was a problem with the server. Try again soon!');
       }
-    });
+    }
+  });
 
 
 

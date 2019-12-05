@@ -20,8 +20,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%; /* helps with drop down menu styling*/
-  position: relative; /* helps with drop down menu styling*/
+  height: 100%;
+  /* helps with drop down menu styling*/
+  position: relative;
+  /* helps with drop down menu styling*/
 }
 
 main {
@@ -151,6 +153,7 @@ footer {
 
 /*****************************************************************/
 /****************ALL HOMEPAGE/INDEX.HTML STYLING *****************/
+/* related to the styling of 'What we do' section */
 .home-container1 {
   text-align: center;
   color: white;
@@ -163,7 +166,8 @@ footer {
   border-bottom: solid;
   border-bottom-color: #343a40;
 }
-.home-container2{
+
+.home-container2 {
   text-align: center;
   color: black;
   display: flex;
@@ -173,25 +177,29 @@ footer {
   padding-bottom: 30px;
 }
 
-.home-container3{
+.home-container3 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 500px;
 }
 
-#wwd{
+#wwd {
   font-size: 4rem;
   max-width: 450px;
-
   line-height: 1;
   text-shadow: 1px 1px 0 rgb(69, 95, 152), 4px 4px 0 rgba(1, 25, 78, 0.40);
   color: white;
   font-weight: 700;
-  font-family: calibri,sans-serif;
+  font-family: calibri, sans-serif;
 }
 
-.topic{
+#carolina{
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.topic {
   color: white;
   width: 300px;
   height: 300px;
@@ -199,11 +207,11 @@ footer {
   margin: 10px;
   text-align: center;
   line-height: 30px;
-  font-family: calibri,sans-serif;
+  font-family: calibri, sans-serif;
   font-size: 1.25rem;
 }
 
-#streamLink{
+#streamLink {
   color: black;
   width: 300px;
   height: 300px;
@@ -215,7 +223,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-#contentLink1{
+#contentLink1 {
   color: black;
   width: 300px;
   height: 140px;
@@ -227,7 +235,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-#contentLink2{
+#contentLink2 {
   color: black;
   width: 300px;
   height: 160px;
@@ -239,7 +247,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-#communityLink1{
+#communityLink1 {
   color: black;
   width: 300px;
   height: 100px;
@@ -251,7 +259,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-#communityLink2{
+#communityLink2 {
   color: black;
   width: 300px;
   height: 100px;
@@ -263,7 +271,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-#communityLink3{
+#communityLink3 {
   color: black;
   width: 300px;
   height: 100px;
@@ -275,7 +283,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-
+/* related to the remainder of the page */
 .hometitle {
   background-color: #5391CE;
   padding: 20px;
@@ -325,14 +333,14 @@ footer {
   border-style: ridge;
 }
 
-#accordion-container{
+#accordion-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 400px;
 }
 
-#accordion{
+#accordion {
   background: #fff;
   padding: 4em 2em 1em 2em;
   width: 1200px;
@@ -342,51 +350,47 @@ footer {
   padding-bottom: 200px;
 }
 
-
 /*****************************************************************/
 /****************ALL CONTACT AND ABOUT STYLING *******************/
 .subtitle {
-
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 30pt;
   padding: 20px;
-
 }
 
 .dateItems {
   list-style: none
 }
 
-  .about-container {
+.about-container {
   text-align: center;
   margin: 50px;
-  font-family: calibri,sans-serif;
+  font-family: calibri, sans-serif;
   padding-top: 20px;
   padding-bottom: 150px;
   padding-left: 100px;
   padding-right: 100px;
   display: flex;
   justify-content: center;
-
 }
 
 .info-container {
   text-align: justify;
-  width:600px;
+  width: 600px;
   padding-right: 50px;
   line-height: 30px;
 }
 
-.employees{
+.employees {
   height: 1000px;
   width: 00px;
   background-image: url("images/insta.png");
 }
 
-#emp1{
-  height:400px;
-  width:304px;
+#emp1 {
+  height: 400px;
+  width: 304px;
   background-image: url("images/rsz_bryson.png");
   background-size: cover;
   background-position: center;
@@ -394,16 +398,16 @@ footer {
   margin-bottom: 20px
 }
 
-#emp2{
-  height:400px;
-  width:304px;
+#emp2 {
+  height: 400px;
+  width: 304px;
   background-image: url("images/rsz_sterling.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.about{
+.about {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -479,7 +483,6 @@ footer {
   text-decoration: none;
 }
 
-
 /****************ALL COD MW STATS STYLING *******************/
 .home-container {
   text-align: center;
@@ -491,7 +494,7 @@ footer {
   padding-bottom: 20px;
 }
 
-#codstats{
+#codstats {
   min-width: 500px;
   min-height: 350px;
   background-image: url("images/blacktech.jpg");
@@ -501,17 +504,19 @@ footer {
   margin-top: 20px;
 }
 
-#radioButtons{
-  display:inline;
+#radioButtons {
+  display: inline;
 }
-#blizzardtag{
+
+#blizzardtag {
   width: 40px;
 }
-#gamertag{
+
+#gamertag {
   width: 120px;
 }
 
-form{
+form {
   width: 300px;
   height: 200px;
   margin-left: 100px;
@@ -520,18 +525,18 @@ form{
   border-bottom: none;
   border-top: none;
   background-color: rgba(0, 0, 0, .6)
-
 }
-#data{
+
+#data {
   width: 300px;
   height: 200px;
   margin-left: 100px;
   border: 5px solid black;
   border-top: none;
   background-color: rgba(0, 0, 0, .6)
-
 }
-input[id=sub]{
+
+input[id=sub] {
   background-color: white;
   border: none;
   color: black;
@@ -542,25 +547,25 @@ input[id=sub]{
   cursor: pointer;
 }
 
-p{
+p {
   float: left;
   padding-left: 60px;
 }
 
-.dataItem{
+.dataItem {
   padding: 0;
   color: #52bafe;
 }
 
-#inputArea{
+#inputArea {
   margin-top: 15px;
 }
 
-#sub{
+#sub {
   margin-top: 15px;
 }
 
-#titleBlock{
+#titleBlock {
   display: block;
   height: 40px;
   width: 500px;

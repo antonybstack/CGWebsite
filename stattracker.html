@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Carolina Gaming</title>
+	<title>Carolina Gaming - CodMW Lookup</title>
 	<meta name="description" content="Carolina Gaming Website">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -24,12 +24,11 @@
 <!-- viewable webpage begins -->
 
 <body>
-<!-- Navigational Bar -->
+	<!-- Navigational Bar -->
 	<nav class="nav-header">
 		<!-- uses tilt.js plugin-->
 		<div class="nav-logo" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.05" data-tilt-max="7">
 			<a class="link" href="index.html"><img id="cdlogo" alt="cglogo" src="images/cglogo.png" width="100"></a>
-			<!-- <p id="cgtitle">Carolina Gaming</p> -->
 		</div>
 
 		<div class="nav-header-links">
@@ -39,57 +38,39 @@
 				<li class="header-item"><a class="link-active" href="stattracker.html">Cod MW Stats</a></li>
 				<li class="header-item"><a class="link" href="teammates.html">Teammates</a></li>
 				<li class="header-item"><a class="link" href="contact.html">Contact Us</a></li>
-				<!-- Drop down menu for account -->
-				<!--<li class="header-item" id="t"><a class="link" href="">Account</a>-->
-				<!--	<ul>-->
-				<!--		<li class="header-item"><a class="link" href="login.html">Login</a></li>-->
-				<!--		<li class="header-item"><a class="link" href="signup.html">Sign Up</a></li>-->
-				<!--		<li class="header-item"><a class="link" href="signup.html">Register</a></li>-->
-				<!--	</ul>-->
-				<!--</li>-->
 			</ul>
 		</div>
-
 	</nav>
 
 	<main>
 		<div class="home-container">
 			<div id="codstats">
-
 				<div id="titleBlock">
 					<p id="codTitle">Call of Duty Modern Warfare Player Stat Lookup</p>
 				</div>
-			<!-- jQuery Plugin slick (a jQuery Carousal) -->
-
-			<form id="target" action="destination.html">
-
-				<div id="radioButtons">
-					<div class>
-						<input type="radio" id="xbox" name="drone" value="xbox">
-						<label for="xbox">Xbox</label>
+				<!-- form allows user to input account name to lookup -->
+				<form id="target" action="destination.html">
+					<div id="radioButtons">
+						<div class>
+							<input type="radio" id="xbox" name="drone" value="xbox">
+							<label for="xbox">Xbox</label>
+						</div>
+						<div>
+							<input type="radio" id="psn" name="drone" value="psn">
+							<label for="psn">PSN</label>
+						</div>
+						<div>
+							<input type="radio" id="pc" name="drone" value="pc">
+							<label for="pc">PC</label>
+						</div>
+						<div id="inputArea">
+						</div>
 					</div>
-
-					<div>
-						<input type="radio" id="psn" name="drone" value="psn">
-						<label for="psn">PSN</label>
-					</div>
-
-					<div>
-						<input type="radio" id="pc" name="drone" value="pc">
-						<label for="pc">PC</label>
-					</div>
-					<div id="inputArea">
-
-					</div>
-
-				</div>
-			</form>
-			<div id="data"></div>
+				</form>
+				<div id="data"></div>
 			</div>
 		</div>
-		<!-- Welcome Page for user to understand what the website might be about -->
 	</main>
-
 
 	<footer>
 		<div class="footer-container">
@@ -114,8 +95,7 @@
 					<ul>
 						<li class="footer-item"><a class="link" href="index.html">Home</a></li>
 						<li class="footer-item"><a class="link" href="about.html">About Us</a></li>
-						<li class="footer-item"><a class="link" href="bracket.html">Tournament Bracket</a></li>
-						<li class="footer-item"><a class="link" href="matches.html">Match History</a></li>
+						<li class="footer-item"><a class="link" href="stattracker.html">Cod MW Stats</a></li>
 						<li class="footer-item"><a class="link" href="teammates.html">Teammates</a></li>
 						<li class="footer-item"><a class="link" href="contact.html">Contact Us</a></li>
 					</ul>
@@ -149,4 +129,5 @@
 	<script src="vanilla-tilt.js"></script>
 
 </body>
+
 </html>
